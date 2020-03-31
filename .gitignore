@@ -6,6 +6,7 @@ __pycache__/
 config.py
 va.xlsx
 sql_va.sql
+*.swp
 
 # C extensions
 *.so
