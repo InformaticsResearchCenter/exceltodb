@@ -29,7 +29,7 @@ def setTrxAmount(dataframe, trxamountcolumn):
 def setExpiredDate(dataframe, expireddatecolumn):
     inputData=True
     while inputData:
-        print('Masukkan Tahun, Bulan dan Tanggal\nContoh:\nTahun: 2020\nBulan: 10\nHari: 10\n')
+        print('Masukkan Tahun, Bulan dan Tanggal Expired\nContoh:\nTahun: 2020\nBulan: 10\nHari: 10\n')
         years=input('Tahun: ')
         months=input('Bulan: ')
         days=input('Hari: ')
@@ -43,7 +43,8 @@ def setExpiredDate(dataframe, expireddatecolumn):
             print(translate.translate(str(e), dest="id").text+'\n')
 
 def setExpiredTime(dataframe, expiredtimecolumn):
-    hours=input("\nJam:")
+    print('\nMasukkan Jam, Menit, dan Detik Expired\n')
+    hours=input("Jam:")
     minutes=input("Menit:")
     seconds=input("Detik:")
     expired_time=timedelta(hours=int(hours), minutes=int(minutes), seconds=int(seconds))
