@@ -16,10 +16,10 @@ def setDefaultEmail(dataframe, emailcolumn):
     dataframe[emailcolumn]='default@email.com'
     return dataframe
 
-def setTrxID(dataframe):
+def setTrxID(dataframe, trxidcolumn):
     bulan = datetime.now().strftime('%m')
     tahun = datetime.now().strftime('%Y')[2:]
-    dataframe['trx_id']=dataframe['trx_id'].str[:-4]+bulan+tahun
+    dataframe[trxidcolumn]=dataframe[trxidcolumn].str[:-4]+bulan+tahun
     return dataframe
 
 def setTrxAmount(dataframe, trxamountcolumn):
