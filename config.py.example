@@ -1,0 +1,5 @@
+db_host_siap='localhost'
+db_port_siap='3306'
+db_username_siap='username host'
+db_password_siap='password host'
+db_name_siap='database name'
